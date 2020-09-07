@@ -3,28 +3,37 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+### Who am I?
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+My name is Tom Roderick, and I'm an economist and data scientist.
 
-There are currently two themes built on Poole:
+I have worked on projects or in roles in the following industries:
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+* Infrastructure: Utilities / Internet
+* Technology: Ed-tech, auctions, recruiting, manufacturing, industrial IOT
+* Research: healthcare (clinical, policy, and payer)
+* Banking: retail deposits, consumer lending, business and commercial banking
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+My employed roles in these spaces have typically been in data science (including ML/AI)
+  
+* Architecture/technical lead
+* Analysis
+* Scoping / Proof-of-Concept build
+* Model build
+* Implementation
+* Ongoing performance assessment
+* Communication: output socialization / executive communication
 
-## Setup
+### Things I am passionate about
 
-Some fun facts about the setup of this project include:
+* Making things work, efficient, smooth, and accurate
+* Mentoring economists and data scientists
+* Mathematics and Economics
+* Philosophy of Science
+* Nature
+* Open source software
+* Dreaming about fine wine and a pastoral life in Iceland, Switzerland, or New Zealand
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+### How can you contact me?
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+[LinkedIn](https://www.linkedin.com/in/thomaseroderick/) is the best way to contact me.
