@@ -24,3 +24,5 @@ paginate:         5
 # Custom vars
 github:
   repo:           https://github.com/tomrod/roderickdev
+
+version:          0.0.1
