@@ -2,7 +2,10 @@
 
 # Dependencies
 markdown:         kramdown
-highlighter:      rouge
+safe:             true
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 # Permalinks
 permalink:        pretty
@@ -17,12 +20,12 @@ baseurl:          /
 
 author:
   name:           'Tom Roderick'
-  url:            https://twitter.com/tom_roderick
+  url:            https://econtwitter.net/web/@tomrod
 
-paginate:         5
+paginate:         10
 
 # Custom vars
 github:
   repo:           https://github.com/tomrod/roderickdev
 
-version:          0.0.1
+version:          0.1.1
