@@ -25,3 +25,6 @@ If data systems, processes, and technology are after thoughts,
 #### 2 - Data management requirements are business requirements
 #### 3 - Data has a lifecycle
 #### 4 - Data management is broader than one skillset
+
+
+s
