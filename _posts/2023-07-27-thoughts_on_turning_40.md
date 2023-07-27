@@ -10,7 +10,7 @@ Seeing as I recently turned 40, I thought I'd take on the time-honored and cheri
 
 # Words of life
 
-Here are some words I've come to live by. Some are quotes from others, but having tried them on like a nice winter jacket and found them right, I
+Here are some words I've come to live by. Some are quotes from others, but having tried them on like a nice winter jacket and found them right, I have unabashedly adopted them as my own.
 
 1. We all come from somewhere. Where and what we are working to be is what matters.
 2. Get sleep. Tomorrow is always a new day.
