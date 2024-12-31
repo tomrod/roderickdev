@@ -7,6 +7,8 @@ title: LLMs in the workflow - what the heck to call this?
 
 What do children, variables, and new products have in common? Naming them is hard.
 
+<!--more-->
+
 The importance of naming cannot be overstated. A good name can make a process or product more memorable and easier to recognize, while a bad name can make it difficult to remember or even understand what the process or product does. Moreover, a well-chosen name can help to create a sense of identity and belonging among the users and developers of a process or product.
 
 # LLMs in the mix
