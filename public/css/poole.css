@@ -330,7 +330,9 @@ tbody tr:nth-child(odd) th {
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #eee;
 }
 
 /* Blog post or page title */
@@ -342,6 +344,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title {
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 /* Meta data line below post title */
@@ -350,6 +353,15 @@ tbody tr:nth-child(odd) th {
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
+}
+
+.post a.read-more {
+  color: #268bd2;
+  text-decoration: none;
+}
+
+.post a.read-more:hover {
+  text-decoration: underline;
 }
 
 /* Related posts */
