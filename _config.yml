@@ -20,7 +20,7 @@ baseurl:          /
 
 author:
   name:           'Tom Roderick'
-  url:            https://econtwitter.net/web/@tomrod
+  email:          'tom@roderick.cc'
 
 paginate:         10
 
@@ -29,3 +29,5 @@ github:
   repo:           https://github.com/tomrod/roderickdev
 
 version:          0.1.1
+
+excerpt_separator: <!--more-->
