@@ -461,3 +461,26 @@ a.pagination-item:hover {
 .view-all a:hover {
   text-decoration: underline;
 }
+
+/* Profile image styling */
+.profile-image {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+/* Clear the float after the introduction */
+.introduction::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 30em) {
+  .profile-image {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+}
