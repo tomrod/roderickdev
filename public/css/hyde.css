@@ -31,7 +31,7 @@
  * Update the foundational and global aspects of the page.
  */
 
-html {
+ html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
@@ -58,6 +58,8 @@ html {
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #424342;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -67,6 +69,7 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: left;
+    overflow-y: auto;
   }
 }
 

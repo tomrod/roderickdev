@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Thoughts on turning 40
+title: Thoughts on my 40s
 ---
 
-# What? Me? 40?
+# What? Me? 40s?
 
-Seeing as I recently turned 40, I thought I'd take on the time-honored and cherished tradition of writing my thoughts. <!--more--> Yes, this is one of those posts where people post about their thoughts when reaching an arbitrary milestone accomplished only by having the good sense and luck to not die by misadventure or misfortune before a certain number of days have passed. If you're reading this blog, we've probably interacted at some point in my life. Thanks for that -- every little bit of life, experience, and such have made me the man I am today.
+I recently entered my 40s, so I thought I'd take on the time-honored and cherished tradition of writing my thoughts. <!--more--> Yes, this is one of those posts where people post about their thoughts when reaching an arbitrary milestone accomplished only by having the good sense and luck to not die by misadventure or misfortune before a certain number of days have passed. If you're reading this blog, we've probably interacted at some point in my life. Thanks for that -- every little bit of life, experience, and such have made me the man I am today.
 
 
 # Words of life
