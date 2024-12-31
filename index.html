@@ -5,32 +5,13 @@ title: Home
 
 <div class="introduction">
   <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat.
-  </p>
-</div>
+    Hi there! I'm Tom. I'm a "social scientist embedded in the tech world." I appreciate you stopping by and hope you find something of interest.
 
-<div class="posts">
-  {% for post in site.posts limit:2 %}
-  <div class="post">
-    <h2 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h2>
+    This blog is a causal and occasional collection of ideas and reflections. You can find the codebase for this Jekyll blog setup at [the repo site](https://www.github.com/tomrod/roderickdev). I've enjoyed learning Jekyll reasonably well but find it still a bit too imperative for most theming and tweaking, hence the very basic and simple theme.
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    I have found over time that people tend to view things mentioned on the Internet as endorsing the mention. This is not the case on this blog. As with all these personal blogs, these are my thoughts. They are my own and not those of my employer, my clients, or my friends.
 
-    {% if post.content contains '<!--more-->' %}
-      {{ post.content | split:'<!--more-->' | first }}
-    {% else %}
-      {{ post.excerpt }}
-    {% endif %}
-    <a href="{{ post.url }}" class="read-more">Read more →</a>
-  </div>
-  {% endfor %}
-</div>
+    Finally, while I once fancied myself an interesting writer, I've found that I'm not. I'm not a good writer. I'm a much better speaker, presenter, discussant, and communicator. So at the end of the day, I'm just working hard to do my best.
 
 <div class="view-all">
   <a href="{{ site.baseurl }}/blog/" class="read-more">View all posts →</a>
