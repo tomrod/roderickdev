@@ -3,35 +3,18 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<h1>Hi there! I'm Tom.</h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  <p class="lead">
+    I'm a "social scientist embedded in the tech world." I appreciate you stopping by and hope you find something of interest.
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+    This blog is a causal and occasional collection of ideas and reflections. You can find the codebase for this Jekyll blog setup at [the repo site](https://www.github.com/tomrod/roderickdev). I've enjoyed learning Jekyll reasonably well but find it still a bit too imperative for most theming and tweaking, hence the very basic and simple theme.
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+    I have found over time that people tend to view things mentioned on the Internet as endorsing the mention. This is not the case on this blog. As with all these personal blogs, these are my thoughts. They are my own and not those of my employer, my clients, or my friends.
+
+    Finally, while I once fancied myself an interesting writer, I've found that I'm not. I'm not a good writer. I'm a much better speaker, presenter, discussant, and communicator. So at the end of the day, I'm just working hard to do my best.
+  </p>
+
+<div class="view-all">
+  <a href="{{ site.baseurl }}/blog/" class="read-more">View all posts →</a>
 </div>
