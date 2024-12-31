@@ -11,12 +11,13 @@ title: Blog
         {{ post.title }}
       </a>
     </h2>
-
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.excerpt }}
-
-    <a href="{{ post.url }}" class="read-more">Read more...</a>
+    {% if post.content contains '<!--more-->' %}
+      {{ post.content | split:'<!--more-->' | first }}
+    {% else %}
+      {{ post.excerpt }}
+    {% endif %}
+    <a href="{{ post.url }}" class="read-more">Read more →</a>
   </div>
   {% endfor %}
 </div>
