@@ -355,13 +355,16 @@ tbody tr:nth-child(odd) th {
   color: #9a9a9a;
 }
 
-.post a.read-more {
+.post .read-more {
+  display: inline-block;
+  margin-top: 1rem;
   color: #268bd2;
-  text-decoration: none;
+  font-style: italic;
 }
 
-.post a.read-more:hover {
+.post .read-more:hover {
   text-decoration: underline;
+  color: #1a65a4;
 }
 
 /* Related posts */
@@ -440,3 +443,4 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+

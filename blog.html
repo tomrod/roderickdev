@@ -14,9 +14,11 @@ title: Blog
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.excerpt }}
+    {{ post.content | split: '<!--more-->' | first }}
 
-    <a href="{{ post.url }}">Read more...</a>
+    {% if post.content contains '<!--more-->' %}
+      <a href="{{ post.url }}" class="read-more">Read more...</a>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
