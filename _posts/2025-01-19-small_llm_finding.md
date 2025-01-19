@@ -1,3 +1,8 @@
+---
+layout: post
+title: Small LLM tricks
+---
+
 # Introduction
 
 Today I report in a few interesting things I have been able to get LLMs to do. These will be shorter blogposts in an effort to write more. With an astounding six blogposts over four years focused on personal tech findings, I can say that I need to up my game!
