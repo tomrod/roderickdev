@@ -2,3 +2,9 @@
 .private/*
 _site/
 _site
+.input
+**/.input/*
+node_modules/
+dist/
+.astro/
+.claude
