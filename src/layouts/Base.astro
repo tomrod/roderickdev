@@ -5,13 +5,18 @@ interface Props {
   title: string;
   description?: string;
   activeNav?: 'home' | 'writing' | 'about' | 'cv';
+  ogType?: 'website' | 'article';
 }
 
 const {
   title,
   description = 'Thomas Roderick, PhD -- economist and AI systems practitioner writing on applied machine learning, causal inference, and AI governance.',
   activeNav,
+  ogType = 'website',
 } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL('/og-image.png', Astro.site).href;
 ---
 
 <!DOCTYPE html>
@@ -21,6 +26,19 @@ const {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   <meta name="description" content={description}>
+  <link rel="canonical" href={canonicalUrl}>
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Roderick.Dev">
+  <meta property="og:type" content={ogType}>
+  <meta property="og:url" content={canonicalUrl}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={ogImage}>
+  <!-- Twitter/X card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImage}>
   <link rel="alternate" type="application/rss+xml" title="Roderick.Dev" href="/rss.xml">
   <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">

@@ -6,10 +6,16 @@ import Base from '../layouts/Base.astro';
   <div class="content-pad">
 
     <span class="page-label">About</span>
-    <p class="lede">I'm an economist and AI systems practitioner. I run <strong>Flamelit</strong>, where I lead consulting for data science, AI architecture, and AI strategy work across government, healthcare, and industry. I'm also Affiliate Faculty at the Raymond A. Mason School of Business at William &amp; Mary.</p>
+
+    <div class="intro-row">
+      <div class="intro-text">
+        <p class="lede">I'm an economist and AI systems practitioner. I run <strong>Flamelit</strong>, where I lead consulting for data science, AI architecture, and AI strategy work across government, healthcare, and industry. I'm also Affiliate Faculty at the Raymond A. Mason School of Business at William &amp; Mary.</p>
+      </div>
+      <img class="headshot" src="/headshot.jpg" alt="Thomas Roderick">
+    </div>
 
     <div class="body-section">
-      <p>Before consulting I spent five years at <strong>JP Morgan Chase</strong> as a lead data scientist in retail finance, and hold a PhD in Economics from UT Austin. My research has appeared in <em>Information Systems Research</em>, <em>INFORMS Journal on Computing</em>, <em>NEJM Catalyst</em>, and <em>DESRIST</em> conference and proceedings.</p>
+      <p>Before consulting I spent five years at <strong>JP Morgan Chase</strong> as a lead data scientist in retail finance, two years as a senior data science director for clinical and population health at <strong>Parkland Center for Clinical Innovation</strong> (where I continue to support as an executive-in-residence), and hold a PhD in Economics from UT Austin. My research has appeared in <em>Information Systems Research</em>, <em>INFORMS Journal on Computing</em>, <em>New England Journal of Medicine: Catalyst</em>, and <em>DESRIST</em> conference proceedings.</p>
 
       <p>Outside of work I play soccer and spend time in the woodcraft workshop. This site is where I write about the work -- the methods, the failures, the occasional finding worth sharing.</p>
     </div>
@@ -24,6 +30,35 @@ import Base from '../layouts/Base.astro';
 </Base>
 
 <style>
+.intro-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.intro-text {
+  flex: 1;
+}
+.intro-text .lede {
+  margin-bottom: 0;
+}
+.headshot {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .intro-row {
+    flex-direction: column-reverse;
+  }
+  .headshot {
+    width: 100px;
+    height: 100px;
+  }
+}
 .page-label {
   font-family: var(--mono);
   font-size: 0.65rem;
@@ -38,8 +73,6 @@ import Base from '../layouts/Base.astro';
   font-size: 1.25rem;
   font-weight: 350;
   line-height: 1.65;
-  max-width: 60ch;
-  margin-bottom: 2.5rem;
   color: var(--text);
 }
 .body-section {
