@@ -18,3 +18,5 @@ By re-framing vulnerability as something that should anticipate specific outcome
 Our framework's goal is straightforward -- improve putting the right help in the right place at the right time.
 
 I deeply grateful for my coauthors, Monica Chiarini Tremblay Rajiv Kohli, Arturo Castellanos, and Yolande Pengetnze, the editorial team Ahmed Abbasi and Heng Xu, and the dedicated reviewers, for all the support, feedback, and challenge to make this project a success.
+
+[Link to Article in Advance](https://pubsonline.informs.org/doi/10.1287/isre.2024.1683)

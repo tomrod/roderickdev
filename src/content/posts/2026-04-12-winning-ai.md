@@ -1,7 +1,7 @@
 ---
 title: Where the AI market will be won
 date: 2026-04-12
-description: Short notes on useful things LLMs can do in practice -- a running list.
+description: Thought on the market upheavals from AI.
 category: AI & Economics
 ---
 
