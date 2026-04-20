@@ -1,0 +1,244 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  return posts.map(entry => ({
+    params: { slug: entry.id.replace(/\.md$/, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const { title, date, description, category } = entry.data;
+
+const dateStr = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// Rough read-time estimate
+const wordCount = entry.body.split(/\s+/).length;
+const readMins = Math.max(1, Math.round(wordCount / 220));
+---
+
+<Base
+  title={`${title} -- Roderick.Dev`}
+  description={description}
+  activeNav="writing"
+>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <div class="article-wrap">
+
+    <a href="/writing/" class="post-back">&larr; Writing</a>
+
+    {category && <span class="post-tag-label">{category}</span>}
+    <h1 class="post-title">{title}</h1>
+
+    <div class="post-meta-row">
+      <span class="post-meta-item"><strong>{dateStr}</strong></span>
+      <span class="post-meta-item">~{readMins} min read</span>
+      <span class="post-meta-item">Thomas Roderick, PhD</span>
+    </div>
+
+    <article class="prose">
+      <Content />
+    </article>
+
+  </div>
+</Base>
+
+<script>
+  const bar = document.getElementById('progressBar') as HTMLElement | null;
+  if (bar) {
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = `scaleX(${h > 0 ? Math.min(window.scrollY / h, 1) : 0})`;
+    }, { passive: true });
+  }
+</script>
+
+<style>
+.article-wrap {
+  max-width: 680px;
+  padding: 4rem 4rem 8rem;
+}
+
+.post-back {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  transition: color 0.12s;
+}
+.post-back:hover { color: var(--accent); text-decoration: none; }
+
+.post-tag-label {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.post-title {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  text-wrap: pretty;
+}
+
+.post-meta-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: baseline;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.75rem 0;
+  margin-bottom: 2.5rem;
+}
+.post-meta-item {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+.post-meta-item strong { color: var(--text); font-weight: 500; }
+
+/* ── Prose ── */
+.prose { max-width: 65ch; }
+
+.prose :global(p) {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 1.4rem;
+  text-wrap: pretty;
+}
+
+.prose :global(h1) {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 2.5rem 0 1rem;
+}
+
+.prose :global(h2) {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 2.5rem 0 1rem;
+}
+
+.prose :global(h3) {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 2rem 0 0.75rem;
+  line-height: 1.35;
+}
+
+.prose :global(ul),
+.prose :global(ol) {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.prose :global(li) {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.prose :global(a) {
+  color: var(--accent);
+}
+
+.prose :global(blockquote) {
+  border-left: 2px solid var(--accent);
+  padding: 1rem 1.25rem;
+  background: var(--accent-bg);
+  margin: 2rem 0;
+}
+.prose :global(blockquote p) { margin-bottom: 0; font-size: 0.95rem; }
+
+.prose :global(code) {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  background: var(--bg-subtle);
+  padding: 0.15em 0.4em;
+  border-radius: 2px;
+  color: var(--text);
+}
+
+.prose :global(pre) {
+  background: var(--bg-subtle);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+.prose :global(pre code) {
+  background: none;
+  padding: 0;
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.prose :global(hr) {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+.prose :global(table) {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.4rem;
+  font-size: 0.88rem;
+}
+.prose :global(th) {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.prose :global(td) {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.prose :global(img) {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+</style>

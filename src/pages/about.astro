@@ -1,0 +1,74 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="About -- Roderick.Dev" activeNav="about">
+  <div class="content-pad">
+
+    <span class="page-label">About</span>
+    <p class="lede">I'm an economist and AI systems practitioner. I run <strong>Flamelit</strong>, where I lead consulting for data science, AI architecture, and AI strategy work across government, healthcare, and industry. I'm also Affiliate Faculty at the Raymond A. Mason School of Business at William &amp; Mary.</p>
+
+    <div class="body-section">
+      <p>Before consulting I spent five years at <strong>JP Morgan Chase</strong> as a lead data scientist in retail finance, and hold a PhD in Economics from UT Austin. My research has appeared in <em>Information Systems Research</em>, <em>INFORMS Journal on Computing</em>, <em>NEJM Catalyst</em>, and <em>DESRIST</em> conference and proceedings.</p>
+
+      <p>Outside of work I play soccer and spend time in the woodcraft workshop. This site is where I write about the work -- the methods, the failures, the occasional finding worth sharing.</p>
+    </div>
+
+    <div class="links-row">
+      <a href="/writing/">Writing</a>
+      <a href="/cv/">CV</a>
+      <a href="mailto:tom@flamelit.tech">tom@flamelit.tech</a>
+    </div>
+
+  </div>
+</Base>
+
+<style>
+.page-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: block;
+}
+.lede {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 350;
+  line-height: 1.65;
+  max-width: 60ch;
+  margin-bottom: 2.5rem;
+  color: var(--text);
+}
+.body-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  max-width: 60ch;
+  margin-bottom: 3rem;
+}
+.body-section p {
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+.body-section strong {
+  font-weight: 600;
+  color: var(--text);
+}
+.links-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.5rem;
+}
+.links-row a {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+</style>

@@ -1,0 +1,128 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const recentPosts = allPosts
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 5);
+
+function formatDate(d: Date) {
+  return d.toISOString().slice(0, 10);
+}
+---
+
+<Base title="Roderick.Dev" activeNav="home">
+  <div class="content-pad">
+
+    <p class="hero-name">Thomas Roderick, PhD</p>
+    <p class="hero-title">
+      Affiliate Faculty, Raymond A. Mason School of Business, William &amp; Mary<br>
+      Contributor, NIST AI Governance Working Group
+    </p>
+
+    <p class="lede">A social scientist embedded in the tech world. Writing on applied machine learning, causal inference, and the governance of systems that actually have to work.</p>
+
+    <div class="credentials">
+      <div class="cred-row">
+        <span class="cred-key">Education</span>
+        <span class="cred-val">PhD Economics, University of Texas at Austin</span>
+      </div>
+      <div class="cred-row">
+        <span class="cred-key">Faculty</span>
+        <span class="cred-val">Affiliate, Raymond A. Mason School of Business, William &amp; Mary</span>
+      </div>
+      <div class="cred-row">
+        <span class="cred-key">Governance</span>
+        <span class="cred-val">NIST AI RMF working group contributor</span>
+      </div>
+      <div class="cred-row">
+        <span class="cred-key">Venues</span>
+        <span class="cred-val">ISR &middot; INFORMS JoC &middot; NEJM Catalyst</span>
+      </div>
+    </div>
+
+    <hr class="section-rule">
+
+    <p class="section-head">Recent writing</p>
+    <ul class="post-list">
+      {recentPosts.map(post => (
+        <li class="post-item">
+          <p class="post-meta">
+            {formatDate(post.data.date)}
+            {post.data.category && <> &middot; {post.data.category}</>}
+          </p>
+          <a class="post-title-link" href={`/writing/${post.id.replace(/\.md$/, '')}/`}>{post.data.title}</a>
+          {post.data.description && (
+            <p class="post-excerpt">{post.data.description}</p>
+          )}
+        </li>
+      ))}
+    </ul>
+
+  </div>
+</Base>
+
+<style>
+.header-chip {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+.hero-name {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+.hero-title {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+.lede {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 350;
+  line-height: 1.65;
+  max-width: 60ch;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+.credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+.cred-row {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+.cred-key {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--muted);
+  min-width: 90px;
+  letter-spacing: 0.04em;
+}
+.cred-val {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+</style>
