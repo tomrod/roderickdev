@@ -7,7 +7,7 @@ category: AI & Economics
 
 On my mind: the value driving AI will not be won at the interface layer.
 
-The current generation of AI companies is focused on interfaces:chatbots, copilots, and APIs. This is not where long-term value accrues.
+The current generation of AI companies is focused on interfaces: chatbots, copilots, and APIs. This is not where long-term value accrues.
 
 The highest-value applications of AI are in systems that make decisions under uncertainty, embedded directly into the physical world, like infrastructure, disaster response, energy, and public systems. 
 
