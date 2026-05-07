@@ -1,6 +1,6 @@
 ---
 title: Abbott's Systems of Professions
-date: 2026-04-12
+date: 2026-05-06
 description: Reasoning on how AI will impact labor markets
 category: AI & Economics
 ---
