@@ -1,4 +1,12 @@
-Ethan Mollick, an associate professor at Wharton and someone who I consider to be a top AI trend spotter, stated: 
+---
+title: Abbott's Systems of Professions
+date: 2026-04-12
+description: Reasoning on how AI will impact labor markets
+category: AI & Economics
+---
+
+
+Ethan Mollick, an associate professor at Wharton and someone who I consider to be a top AI trend spotter, [stated](https://www.linkedin.com/posts/emollick_since-so-much-of-the-ai-job-debate-is-among-share-7454248429297336320-MK4T): 
 
 > Since so much of the AI job debate is among economists, they miss that as jobs are disrupted, professions will compete over new boundaries. Whether there or more or less jobs, they will certainly change, and professions will compete to gain jurisdiction over valuable ones, in large part through regulation, requiring credentials, and appealing to the public.
 
