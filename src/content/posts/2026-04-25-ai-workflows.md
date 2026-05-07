@@ -1,9 +1,8 @@
 ---
 title: Domain AI
-date: 2026-04-21
+date: 2026-04-25
 description: Why Applications of AI are a fruitful field
-category: Applied AI
-draft: true
+category: AI & Economics
 ---
 
 The most commercially interesting AI work right now is not happening at the frontier. It's happening one layer down, where general-purpose models get pointed at specific domains and the hard work is figuring out what that actually means in practice.
@@ -20,7 +19,7 @@ None of these constraints are exotic. They're just the conditions under which AI
 
 ## What makes domain applications fruitful
 
-The answer is specificity. When you constrain the problem, you reduce the failure surface. A model that does one thing well in a known context is more deployable than a model that does many things adequately in unknown ones.
+Specificity makes applications of AI fruitful. When you constrain the problem, you reduce the failure surface. A model that does one thing well in a known context is more deployable than a model that does many things adequately in unknown ones.
 
 This is counterintuitive coming from the general capability framing that dominates AI discourse. More capable feels like it should mean more useful. In practice, "more capable" often means more ways to fail in ways that are hard to predict and harder to explain to stakeholders.
 
