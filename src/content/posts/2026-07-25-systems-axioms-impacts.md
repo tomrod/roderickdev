@@ -61,7 +61,7 @@ Sociologist Esther Sullivan describes residents in this position as “halfway h
 
 Economists Werner Hirsch and Anthony Rufolo identified the predictable incentive problem created by this arrangement more than 25 years ago. Divided ownership of an immobile housing asset creates an opportunity for rent increases because the landowner understands that the homeowner’s cost of leaving is unusually high.[^7]
 
-[^7]: Werner Z. Hirsch and Anthony M. Rufolo, “[The Regulation of Immobile Housing Assets Under Divided Asset Ownership](https://doi.org/10.1016/S0144-8188%2899%2900012-5),” *International Review of Law and Economics* 19, no. 3 (1999): 383–397.
+[^7]: Werner Z. Hirsch and Anthony M. Rufolo, “[The Regulation of Immobile Housing Assets Under Divided Ownership](https://doi.org/10.1016/S0144-8188%2899%2900012-5),” *International Review of Law and Economics* 19, no. 3 (1999): 383–397.
 
 Once one party has made a large, location-specific investment, the other party can capture some of its value by changing the terms. The homeowner’s past investment becomes the park owner’s future bargaining power.
 
