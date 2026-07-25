@@ -1,6 +1,6 @@
 ---
 title: "All things are systems - the Idlewild Acres case"
-date: 2026-07-26
+date: 2026-07-25
 description: A qualitative case study of how sociotechnical system design results in vulnerable populations
 category: Sociotechnical Systems
 ---
