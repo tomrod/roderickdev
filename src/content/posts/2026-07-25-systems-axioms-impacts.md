@@ -15,7 +15,7 @@ He recently reported on residents of Idlewild Acres, a manufactured-home communi
 
 The experiences are fairly harrowing. According to one resident, a mother put plywood over a failing floor to keep her five-year-old child, who has a condition that makes his bones especially fragile, from falling through it and breaking his bones.
 
-Per the reporting, the private equity owner, Gvest Capital, disputed the claim that maintenance had stopped. Its representative listed completed capital improvements and said several hundred work orders had been closed. The company also said the rent increases would remain in place.
+Per the reporting, the corporate owner disputed the claim that maintenance had stopped. Its representative listed completed capital improvements and said several hundred work orders had been closed. The company also said the rent increases would remain in place.
 
 This story can be read as a dispute between tenants and a landlord. But I think that framing is too narrow, because if we dig a bit we see that it is also a story about system design.
 
