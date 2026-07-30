@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+echo "Running pre-push checks..."
+
+echo "Type checking..."
+npm run check
+
+echo "Running tests..."
+npm test
+
+echo "All checks passed."

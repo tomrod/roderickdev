@@ -22,7 +22,7 @@ const dateStr = date.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
-const readMins = readTime(entry.body);
+const readMins = readTime(entry.body ?? '');
 ---
 
 <Base
