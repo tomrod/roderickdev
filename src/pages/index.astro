@@ -1,15 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
+import { formatDate } from '../lib/utils';
 
 const allPosts = await getCollection('posts', ({ data }) => !data.draft);
 const recentPosts = allPosts
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 5);
-
-function formatDate(d: Date) {
-  return d.toISOString().slice(0, 10);
-}
 ---
 
 <Base title="Roderick.Dev" activeNav="home">

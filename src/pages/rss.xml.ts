@@ -1,6 +1,7 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 import type { APIContext } from 'astro';
+import { slugFromId } from '../lib/utils';
 
 export async function GET(context: APIContext) {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
@@ -14,7 +15,7 @@ export async function GET(context: APIContext) {
       title: post.data.title,
       pubDate: post.data.date,
       description: post.data.description,
-      link: `/writing/${post.id.replace(/\.md$/, '')}/`,
+      link: `/writing/${slugFromId(post.id)}/`,
     })),
   });
 }

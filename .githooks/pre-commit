@@ -1,6 +1,16 @@
 #!/bin/sh
+set -e
+
+# Sync lockfile if package.json changed
 if git diff --cached --name-only | grep -q "^package\.json$"; then
   echo "package.json staged — syncing package-lock.json..."
   npm install
   git add package-lock.json
+fi
+
+# Lint staged .ts and .astro files
+STAGED=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(ts|astro)$' || true)
+if [ -n "$STAGED" ]; then
+  echo "Linting staged files..."
+  echo "$STAGED" | xargs npx eslint --max-warnings=0
 fi

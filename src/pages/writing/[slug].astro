@@ -1,11 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, render } from 'astro:content';
+import { readTime, slugFromId } from '../../lib/utils';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
   return posts.map(entry => ({
-    params: { slug: entry.id.replace(/\.md$/, '') },
+    params: { slug: slugFromId(entry.id) },
     props: { entry },
   }));
 }
@@ -21,9 +22,7 @@ const dateStr = date.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
-// Rough read-time estimate
-const wordCount = entry.body.split(/\s+/).length;
-const readMins = Math.max(1, Math.round(wordCount / 220));
+const readMins = readTime(entry.body);
 ---
 
 <Base
