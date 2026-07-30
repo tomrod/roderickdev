@@ -8,7 +8,7 @@ export async function GET(context: APIContext) {
 
   return rss({
     title: 'Roderick.Dev',
-    description: 'Thomas Roderick, PhD — writing on applied machine learning, causal inference, and AI governance.',
+    description: 'Tom Roderick, writing on applied machine learning, causal inference, and AI governance.',
     site: context.site!,
     items: sorted.map(post => ({
       title: post.data.title,

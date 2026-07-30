@@ -18,7 +18,7 @@ ctx.fillRect(72, 72, 3, H - 144);
 // Name
 ctx.fillStyle = '#1c1b18';
 ctx.font = 'bold 56px sans-serif';
-ctx.fillText('Thomas Roderick, PhD', 104, 220);
+ctx.fillText('Tom Roderick, PhD', 104, 220);
 
 // Rule
 ctx.strokeStyle = '#d6d1c8';

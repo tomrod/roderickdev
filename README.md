@@ -1,6 +1,6 @@
 # Roderick.Dev
 
-Personal site for Thomas Roderick, PhD. Built with [Astro](https://astro.build) and deployed as a static site.
+Personal site for Tom Roderick, PhD. Built with [Astro](https://astro.build) and deployed as a static site.
 
 ## Stack
 

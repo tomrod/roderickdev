@@ -39,4 +39,4 @@ GMI, short for "generative model integration," is a name that emphasizes the int
 
 ## Final Thoughts
 
-Naming things is hard, but it is an important task that cannot be overlooked. What do you think we should call including generative model outputs into services and products? Let me know on [LinkedIn](https://www.linkedin.com/posts/thomaseroderick_generativeinteraction-activity-7060654225453707264-puU2) or the [MLOps.Community Slack](https://mlops.community/slack/).
+Naming things is hard, but it is an important task that cannot be overlooked. What do you think we should call including generative model outputs into services and products? Let me know on [LinkedIn](https://www.linkedin.com/posts/Tomeroderick_generativeinteraction-activity-7060654225453707264-puU2) or the [MLOps.Community Slack](https://mlops.community/slack/).
