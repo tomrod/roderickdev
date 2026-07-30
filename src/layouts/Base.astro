@@ -46,8 +46,8 @@ const ogImage = new URL('/og-image.png', Astro.site).href;
   <!-- Prevent FOUC: apply theme before first paint -->
   <script is:inline>
     (function () {
-      var saved = localStorage.getItem('rd-theme');
-      var preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const saved = localStorage.getItem('rd-theme');
+      const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', saved || preferred);
     })();
   </script>
@@ -73,10 +73,10 @@ const ogImage = new URL('/og-image.png', Astro.site).href;
   <div class="nav-section">
     <span class="nav-label" id="nav-topics">topics</span>
     <ul class="nav-links" aria-labelledby="nav-topics">
-      <li><a href="/writing/#causal-inference">Causal inference</a></li>
-      <li><a href="/writing/#ai-governance">AI governance</a></li>
-      <li><a href="/writing/#applied-ml">Applied ML</a></li>
-      <li><a href="/writing/#econometrics">Econometrics</a></li>
+      <li><a href="/writing/?tag=AI+Governance">AI governance</a></li>
+      <li><a href="/writing/?tag=Applied+ML">Applied ML</a></li>
+      <li><a href="/writing/?tag=AI+%26+Economics">AI &amp; economics</a></li>
+      <li><a href="/writing/?tag=Sociotechnical+Systems">Sociotechnical systems</a></li>
     </ul>
   </div>
 
