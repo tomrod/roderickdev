@@ -1,0 +1,88 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Privacy -- Roderick.Dev">
+  <div class="content-pad">
+
+    <span class="page-label">Privacy</span>
+    <h1 class="privacy-title">Privacy Policy</h1>
+    <p class="privacy-updated">Last updated: July 2026</p>
+
+    <div class="privacy-body">
+      <p>This site (<strong>roderick.dev</strong>) is a personal blog. It does not sell products, collect accounts, or process payments.</p>
+
+      <h2>Analytics</h2>
+      <p>This site uses <strong>Cloudflare Web Analytics</strong> for basic traffic measurement (page views, referrers, country-level geography). Cloudflare Analytics runs entirely at the network edge — it does not set cookies, does not fingerprint browsers, and does not collect or store personally identifiable information. No data is shared with advertising networks.</p>
+      <p>For details, see <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer">Cloudflare's privacy policy</a>.</p>
+
+      <h2>Fonts &amp; third-party requests</h2>
+      <p>All fonts are self-hosted. No requests are made to Google Fonts, Adobe Fonts, or any other external font service at page load.</p>
+
+      <h2>Cookies &amp; local storage</h2>
+      <p>This site stores your light/dark theme preference in browser <code>localStorage</code>. This value never leaves your browser and is not transmitted to any server.</p>
+      <p>No cookies are set.</p>
+
+      <h2>Contact</h2>
+      <p>Questions? <a href="mailto:tom@roderick.dev">tom@roderick.dev</a></p>
+    </div>
+
+  </div>
+</Base>
+
+<style>
+.page-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+.privacy-title {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+.privacy-updated {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  margin-bottom: 3rem;
+}
+.privacy-body {
+  max-width: 60ch;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.privacy-body p {
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text);
+}
+.privacy-body h2 {
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.privacy-body code {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  background: var(--bg-subtle);
+  padding: 0.15em 0.4em;
+  border-radius: 2px;
+}
+</style>
