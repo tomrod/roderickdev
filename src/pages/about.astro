@@ -24,6 +24,14 @@ import Base from '../layouts/Base.astro';
       <a href="/writing/">Writing</a>
       <a href="/cv/">CV</a>
       <a href="mailto:tom@roderick.dev">tom@roderick.dev</a>
+      <a href="https://calendar.app.google/CWzQJQKwk2Rj4MM16" target="_blank" rel="noopener" class="external-link">
+        Book a call
+        <svg class="external-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </a>
     </div>
 
   </div>
@@ -103,5 +111,15 @@ import Base from '../layouts/Base.astro';
   font-family: var(--mono);
   font-size: 0.7rem;
   letter-spacing: 0.04em;
+}
+.external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
+.external-icon {
+  width: 0.85em;
+  height: 0.85em;
+  flex-shrink: 0;
 }
 </style>
