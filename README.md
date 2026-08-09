@@ -5,7 +5,7 @@ Personal site for Tom Roderick, PhD. Built with [Astro](https://astro.build) and
 ## Stack
 
 - **Framework**: Astro v7 (static output)
-- **Fonts**: Self-hosted via `@fontsource` — Source Serif 4 (variable), IBM Plex Sans, IBM Plex Mono
+- **Fonts**: Self-hosted via `@fontsource` -- Source Serif 4 (variable), IBM Plex Sans, IBM Plex Mono
 - **Styling**: Plain CSS with custom properties; light/dark theme via `data-theme` on `<html>`
 - **Content**: Markdown posts in `src/content/posts/`
 - **Sitemap**: Auto-generated at `/sitemap-index.xml`
@@ -33,16 +33,16 @@ npm run dev
 
 Tests live in `src/tests/`. Coverage areas:
 
-- **`utils.test.ts`** — `readTime`, `formatDate`, `slugFromId` pure functions
-- **`contrast.test.ts`** — WCAG AA (4.5:1) contrast ratios for all color pairs in light and dark modes
-- **`posts.test.ts`** — Validates all markdown posts have required frontmatter and consistent filenames
+- **`utils.test.ts`** -- `readTime`, `formatDate`, `slugFromId` pure functions
+- **`contrast.test.ts`** -- WCAG AA (4.5:1) contrast ratios for all color pairs in light and dark modes
+- **`posts.test.ts`** -- Validates all markdown posts have required frontmatter and consistent filenames
 
 ## CI / CD
 
 Two GitHub Actions workflows:
 
-- **`ci.yml`** — Runs on non-main branches and PRs: lint → type check → test → build → dependency review
-- **`deploy.yml`** — Runs on `main`: same checks → build → deploy to GitHub Pages
+- **`ci.yml`** -- Runs on non-main branches and PRs: lint → type check → test → build → dependency review
+- **`deploy.yml`** -- Runs on `main`: same checks → build → deploy to GitHub Pages
 
 Supply chain: Dependabot (monthly npm, weekly actions), `npm audit`, and `dependency-review-action` on PRs.
 
@@ -50,8 +50,8 @@ Supply chain: Dependabot (monthly npm, weekly actions), `npm audit`, and `depend
 
 Hooks are in `.githooks/` (tracked) and activated via `npm install` → `prepare` script.
 
-- **pre-commit** — syncs lockfile if `package.json` was staged; lints staged `.ts`/`.astro` files
-- **pre-push** — runs `astro check` and full test suite before any push
+- **pre-commit** -- syncs lockfile if `package.json` was staged; lints staged `.ts`/`.astro` files
+- **pre-push** -- runs `astro check` and full test suite before any push
 
 ## Theme
 

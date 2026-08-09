@@ -54,7 +54,7 @@ const dark = {
   accent: oklch(0.67, 0.12, 18),
 };
 
-describe('WCAG AA contrast (4.5:1) — light mode', () => {
+describe('WCAG AA contrast (4.5:1) -- light mode', () => {
   it('--text on --bg', () => {
     expect(ratio(light.text, light.bg)).toBeGreaterThanOrEqual(AA_NORMAL);
   });
@@ -72,7 +72,7 @@ describe('WCAG AA contrast (4.5:1) — light mode', () => {
   });
 });
 
-describe('WCAG AA contrast (4.5:1) — dark mode', () => {
+describe('WCAG AA contrast (4.5:1) -- dark mode', () => {
   it('--text on --bg', () => {
     expect(ratio(dark.text, dark.bg)).toBeGreaterThanOrEqual(AA_NORMAL);
   });

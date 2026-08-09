@@ -7,7 +7,7 @@ const H = 630;
 const canvas = createCanvas(W, H);
 const ctx = canvas.getContext('2d');
 
-// Background — warm off-white matching site --bg
+// Background -- warm off-white matching site --bg
 ctx.fillStyle = '#f5f3ef';
 ctx.fillRect(0, 0, W, H);
 
