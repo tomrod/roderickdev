@@ -5,7 +5,7 @@ description: Obsessing over AI agent harnesses - or, the uphill battle agents fa
 category: AI governance, Sociotechnical systems
 ---
 
-I spoke at a [recent panel on AI Adoption](https://www.rise8.us/prodacity) and presented part of Flamelit's AI operations playbook for governance. I enjoyed the experience -- Kent Beck (TDD & Extreme Programming) and Russell Miles (Learning Chaos Engineering / *A Software Enchiridion & Engineering Agents*) presented there, heavy tech like Anthropic, OpenAI, and Google sent reps. Folks were open about just how *weird* AI tools have become. The entire conference was invigorating to see the myriad of ideas of making things work with this mishmash of chaos LLMs have incorporated into our daily lives.
+I spoke at a [recent panel on AI Adoption](https://www.rise8.us/prodacity) and presented part of [Flamelit's](https://flamelit.tech) AI operations playbook for governance. I enjoyed the experience -- Kent Beck (TDD & Extreme Programming) and Russell Miles (Learning Chaos Engineering / *A Software Enchiridion & Engineering Agents*) presented there, heavy tech like Anthropic, OpenAI, and Google sent reps. Folks were open about just how *weird* AI tools have become. The entire conference was invigorating to see the myriad of ideas of making things work with this mishmash of chaos LLMs have incorporated into our daily lives.
 
 The experience has supercharged my desire to better understand something I was already evolving a bit for a few clients' workforce skills growth: **agent harnesses**.
 
