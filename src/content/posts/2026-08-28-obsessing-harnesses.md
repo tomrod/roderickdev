@@ -1,5 +1,5 @@
 ---
-title: Introducing Roderick.Dev
+title: Obsessing over AI agent harnesses
 date: 2026-08-28
 description: Obsessing over AI agent harnesses - or, the uphill battle agents face
 category: AI, Economics, Information Theory
